@@ -1,3 +1,43 @@
+/*............Header, Title and logo............*/
+.pagetitle {
+    position: relative;
+    margin-left: 150px;
+    margin-top: -60px;
+    padding-bottom: 60px;
+}
+
+.logo {
+    position: relative;
+    height: 100px;
+    left: 30px;
+}
+
+header {
+    padding-top: 30px;
+    border-bottom: 4px solid black;
+    height: 170px;
+}
+
+
+/*.............Search bar................*/
+.searchbox {
+    position: relative;
+    float: right;
+    margin-top: -100px;
+    width: 300px;
+    margin-right: 20px;
+    text-align: center;
+}
+
+.bookCover {
+    padding-bottom: 20px;
+    width: 200px;
+    height: 300px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+
 /*................Footer...............*/
 .footer {
     height: 60px;
@@ -13,7 +53,7 @@
 .flip-card {
     background-color: transparent;
     width: 200px;
-    height: 290px;
+    height: 300px;
     perspective: 1000px;
     padding-bottom: 20px;
     /* Remove this if you don't want the 3D effect */
@@ -53,6 +93,7 @@
     background-color: dodgerblue;
     color: white;
     transform: rotateY(180deg);
+    height: 100%;
 }
 
 
@@ -60,58 +101,33 @@
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
+    padding-top: 40px;
 }
 
-/*...............Title.................*/
-.bookstore {
-    position: relative;
-    margin-left: 300px;
-    margin-top: -90px;
-    padding-bottom: 60px;
-}
-
-/*.............Search bar................*/
-.searchbox {
-    position: relative;
-    float: right;
-    margin-top: -100px;
-    width: 300px;
-    margin-right: 20px;
-    text-align: center;
-}
-
-.bookCover {
-    padding-bottom: 20px;
-    width: 200px;
-    height: 290px;
-    padding-left: 10px;
-    padding-right: 10px;
-}
-
-/*............Button............*/
-.moreInfoBtn {
-    position: relative;
-    margin-top: 10%;
-
-}
 
 /*............Inner Card..............*/
 .booktitle {
-   font: 5px;
+    height: 10%;
+    font-weight: bold;
+    font-size: 14px;
+    padding: 7px;
+    padding-top: 7px;
 }
 
 
 .description {
-    font: 5px;
+    height: 55%;
+    font-size: 12px;
+    padding: 7px;
+    padding-bottom: 5px;
 }
 
-
-.language{
-    font: 5px;
+.language {
+    height: 10%;
 }
 
-.flip-card-back{
-    display: flex;
-    flex-direction: column;
-    text-align: center;
+.moreInfoBtn {
+    position: relative;
+    height: 10%;
+    margin-top: -5px;
 }

@@ -4,7 +4,6 @@ var app = new Vue({
         books: [],
         url: "https://api.myjson.com/bins/zyv02",
         search: "",
-        noResults: true,
 
     },
     methods: {
