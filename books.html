@@ -1,0 +1,64 @@
+<!DOCTYPE HTML>
+<html lang="">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Library</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.2/jquery.fancybox.css">
+
+</head>
+
+<body>
+    <div class="container" id="app">
+
+        <header>
+
+            <img class="logo" class="img-responsive" src="pics/logo-ubiqum.jpg" alt="Chania">
+
+            <h1 class="bookstore">BOOKSTORE</h1>
+
+        </header>
+
+
+        <input class="searchbox" type="text" v-model="search" placeholder="Search books">
+
+        <div class="bookDisplayRow">
+            <div v-for="book in filteredBooks">
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <img class="bookCover" v-bind:src="book.cover">
+                        </div>
+                        <div class="flip-card-back">
+                            <h4 class="booktitle">{{book.title}}</h4>
+                            <p class="description">{{book.description}}</p>
+                            <p class="language">{{book.language}}</p>
+                            <button class="moreInfoBtn"><a v-bind:href="book.detail" v-bind:data-thumb="book.detail" data-fancybox="images" v-bind:data-caption="book.title">More Info</a></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <h4 v-if="noResults == !filteredBooks">No Results Found</h4>
+
+
+    </div>
+
+    <footer class="footer">
+        <p>&copy; 2016 TGIF | All Rights Reserved</p>
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="books.css">
+    <script src="//code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.2/jquery.fancybox.js"></script>
+    <script src="https://unpkg.com/vue/dist/vue.js"></script>
+    <script src="books.js"></script>
+
+</body>
+
+</html>
